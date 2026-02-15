@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Future Culinary Academy</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #ffee04;
+        }
+
+        /* Main content */
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            background-color: #262626;
+            border-top: 36px solid #ffee04;
+        }
+
+        main img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Footer */
+        footer {
+            color: black;
+            text-align: center;
+            padding: 40px 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            align-items: center;
+        }
+
+        footer h3, footer p {
+            margin: 0;
+            font-size: 2.5rem;
+            line-height: 1.5;
+            font-weight: 600;
+        }
+
+        footer .codes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            main img {
+                max-width: 400px;
+            }
+
+            footer .codes {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            main img {
+                width: 90%;
+            }
+
+            footer .codes {
+                flex-direction: column;
+                gap: 8px;
+            }
+            footer h3, footer p {
+                margin: 0;
+                font-size: 1.5rem;
+                line-height: 1.4;
+                font-weight: 600;
+        }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Center Content -->
+    <main>
+        <img src="images/bg.jpg" alt="TheFCA">
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <h3>Precision. Discipline. Mastery.</h3>
+            <p>Coming Soon..</p>
+        </div>
+        <div class="codes">
+            <span>RTO Code: 46517</span>
+            <span>CRICOS Provider Code: 04421B</span>
+        </div>
+    </footer>
+</body>
+</html>
