@@ -3,13 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Light mode favicon -->
-    <link rel="icon" href="images/favicon-light.ico" media="(prefers-color-scheme: light)">
-
-    <!-- Dark mode favicon -->
-    <link rel="icon" href="images/favicon-dark.ico" media="(prefers-color-scheme: dark)">
-
-
     <title>The Future Culinary Academy</title>
     <style>
         html, body {
@@ -31,9 +24,11 @@
             border-top: 36px solid #ffee04;
         }
 
+        main picture,
         main img {
             width: 100%;
             height: auto;
+            display: block;
         }
 
         /* Footer */
@@ -65,30 +60,21 @@
 
         /* Responsive adjustments */
         @media (max-width: 768px) {
-            main img {
-                max-width: 400px;
-            }
-
             footer .codes {
                 font-size: 0.8rem;
             }
         }
 
-        @media (max-width: 480px) {
-            main img {
-                width: 90%;
+        @media (max-width: 640px) {
+            footer h3, footer p {
+                font-size: 1.5rem;
+                line-height: 1.4;
             }
 
             footer .codes {
                 flex-direction: column;
                 gap: 8px;
             }
-            footer h3, footer p {
-                margin: 0;
-                font-size: 1.5rem;
-                line-height: 1.4;
-                font-weight: 600;
-        }
         }
     </style>
 </head>
@@ -96,7 +82,10 @@
 
     <!-- Center Content -->
     <main>
-        <img src="images/bg.jpg" alt="TheFCA">
+        <picture>
+            <source srcset="images/bg-mobile.jpg" media="(max-width: 640px)">
+            <img src="images/bg.jpg" alt="TheFCA">
+        </picture>
     </main>
 
     <!-- Footer -->
@@ -110,5 +99,6 @@
             <span>CRICOS Provider Code: 04421B</span>
         </div>
     </footer>
+
 </body>
 </html>
